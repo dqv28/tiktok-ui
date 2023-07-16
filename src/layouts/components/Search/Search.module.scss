@@ -27,6 +27,10 @@
         color: rgba(22, 24, 35, 0.75);
     }
 
+    .clear:hover + .search-btn {
+        background-color: transparent;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -35,6 +39,15 @@
         width: 1px;
         height: calc(var(--search-height) - var(--search-top-spacer) * 2);
         background-color: rgba(22, 24, 35, 0.12);
+    }
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+
+        .search-btn {
+            color: rgba(22, 24, 35, 0.75);
+            background-color: rgba(22, 24, 35, 0.06);
+        }
     }
 
     &:focus-within {
@@ -84,11 +97,8 @@
     color: rgba(22, 24, 35, 0.34);
 
     &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        cursor: pointer;
-    }
-
-    &:active {
+        color: rgba(22, 24, 35, 0.75);
         background-color: rgba(22, 24, 35, 0.06);
+        cursor: pointer;
     }
 }
