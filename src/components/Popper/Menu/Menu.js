@@ -22,7 +22,7 @@ function Menu({
     const current = history[history?.length - 1];
 
     const renderItems = () => {
-        return current.data.map((item, index) => {
+        return current.data?.map((item, index) => {
             const isParent = !!item.children;
 
             return (
