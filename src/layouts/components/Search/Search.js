@@ -63,7 +63,7 @@ function Search() {
         <div>
             <HeadlessTippy
                 interactive
-                visible={showResult && searchResult.length > 0}
+                visible={showResult && searchResult?.length > 0}
                 render={(attrs) => (
                     <div
                         className={cx('search-result')}
